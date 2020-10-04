@@ -1,0 +1,21 @@
+
+{% extends "layout.html" %}
+{% block content %}
+<p>Enter the certificate ID</p>
+<div class="container">
+    <div class="content-section">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                {{ form.CId(class="form-control form-control-lg") }}
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-group">
+                {{ form.search(class="btn btn-outline-search") }}
+            </div>
+        </form>
+    </div>
+</div>
+    
+{% endblock content %}

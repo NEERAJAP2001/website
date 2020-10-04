@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>What do U wanna do ? choose one option.</h1>
+<br>
+<br>
+
+<input id="myButton" type="submit" class="my-cta-button" value="Search" >
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "/search";
+    };
+</script>
+
+<br>
+<br>
+
+<input id="myButton2" type="submit" class="my-cta-button" value="Upload">
+<script type="text/javascript">
+    document.getElementById("myButton2").onclick = function () {
+        location.href = "/upload";
+    };
+</script>
+
+
+{% endblock content %}
